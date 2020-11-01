@@ -30,7 +30,7 @@ function firstF() {
         xhr.send();
     };
 
-    getJSON('https://songapi.thetuhin.com/search?query=' + snformat, function(err, data) {
+    getJSON('https://savan.myrias.ml/search?query=' + snformat, function(err, data) {
 
         if (err != null) {
             console.error(err);

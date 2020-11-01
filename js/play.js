@@ -60,7 +60,7 @@ xmlhttp.onreadystatechange = function() {
                 }, s.send()
             };
             //this is the lyrics api
-            lyricsinit("https://songapi.thetuhin.com/lyrics?id=" + lyricsid, function(n, e) {
+            lyricsinit("https://savan.myrias.ml/lyrics?id=" + lyricsid, function(n, e) {
                 if (null != n) console.error(n);
                 else {
                     var s = `${e.lyrics}`;
@@ -73,7 +73,7 @@ xmlhttp.onreadystatechange = function() {
     }
 };
 //this is the song detail api
-xmlhttp.open("GET", "https://songapi.thetuhin.com/song?id=" + songid, true);
+xmlhttp.open("GET", "https://savan.myrias.ml/song?id=" + songid, true);
 xmlhttp.send();
 
 //when lyricsask tapped lyrics will shown (if lyrics available)
@@ -90,7 +90,7 @@ function share() {
                 text: "Listen " + songn + " on Musicder." + "\n\n👉",
                 url: window.location.href
             }).then(() => {
-                console.log('Thanks for Sharing!');
+                console.log('Thanks for Sharing Bitch!');
             })
             .catch(err => {
                 console.log(`Couldn't share because of`, err.message);
